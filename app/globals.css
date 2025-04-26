@@ -1,0 +1,181 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 20 100% 99%;
+    --foreground: 20 30% 20%;
+    --card: 20 100% 99%;
+    --card-foreground: 20 30% 20%;
+    --popover: 20 100% 99%;
+    --popover-foreground: 20 30% 20%;
+    --primary: 20 65% 28%;
+    --primary-foreground: 20 100% 99%;
+    --secondary: 20 30% 96%;
+    --secondary-foreground: 20 30% 20%;
+    --muted: 20 30% 96%;
+    --muted-foreground: 20 30% 45%;
+    --accent: 20 65% 85%;
+    --accent-foreground: 20 30% 20%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 20 100% 99%;
+    --border: 20 30% 90%;
+    --input: 20 30% 90%;
+    --ring: 20 65% 28%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 20 15% 15%; /* 略微提亮背景色 */
+    --foreground: 20 30% 98%;
+    --card: 20 15% 20%;
+    --card-foreground: 20 30% 98%;
+    --popover: 20 15% 20%;
+    --popover-foreground: 20 30% 98%;
+    --primary: 16 65% 50%; /* 调整为接近8F462D的色调 */
+    --primary-foreground: 20 100% 99%;
+    --secondary: 20 15% 30%;
+    --secondary-foreground: 20 30% 98%;
+    --muted: 20 10% 30%;
+    --muted-foreground: 20 30% 90%;
+    --accent: 16 65% 75%; /* 与主色协调的强调色 */
+    --accent-foreground: 20 30% 98%;
+    --destructive: 0 84% 70%;
+    --destructive-foreground: 20 100% 99%;
+    --border: 20 15% 30%;
+    --input: 20 15% 30%;
+    --ring: 16 65% 45%; /* 与主色保持一致 */
+  }
+
+
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  .font-sc {
+    font-family: var(--font-noto-sans-sc);
+  }
+  .font-josefin {
+    font-family: var(--font-josefin-sans);
+  }
+  /* 添加新的类用于中文环境下的西文 */
+  .chinese-context :where(:not(.font-josefin, .font-sc)) {
+    font-family: var(--font-josefin-sans), var(--font-noto-sans-sc);
+  }
+}
+
+/* Code block styles */
+.prose pre {
+  position: relative;
+  padding: 1rem;
+  margin: 1rem 0;
+  background: #1e1e1e !important;
+  border-radius: 0.5rem;
+  overflow-x: auto;
+}
+
+.prose pre > code {
+  display: block;
+  padding: 0;
+  margin: 0;
+  line-height: 1.5;
+  font-size: 0.875rem;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+  "Liberation Mono", "Courier New", monospace;
+}
+
+/* Inline code styles */
+.prose :not(pre) > code {
+  padding: 0.2em 0.4em;
+  background-color: rgba(175, 184, 193, 0.2);
+  border-radius: 6px;
+  font-size: 85%;
+}
+
+/* Language badge */
+.prose pre[class*="language-"]::before {
+  content: attr(data-language);
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  font-size: 0.75rem;
+  color: #8b949e;
+  text-transform: uppercase;
+}
+
+/* Syntax highlighting colors - GitHub-like theme */
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: #8b949e;
+}
+
+.token.punctuation {
+  color: #c9d1d9;
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.deleted {
+  color: #79c0ff;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+  color: #a5d6ff;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+  color: #d2a8ff;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+  color: #ff7b72;
+}
+
+.token.function,
+.token.class-name {
+  color: #d2a8ff;
+}
+
+.token.regex,
+.token.important,
+.token.variable {
+  color: #ffa657;
+}
+
+/* Add after your existing styles */
+.katex {
+  font-size: 1.1em !important;
+}
+
+.katex-display {
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 0.5em 0;
+}
+
+[data-theme="dark"] .katex {
+  color: #fff;
+}
