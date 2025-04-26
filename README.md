@@ -1,71 +1,71 @@
-# Wood Away 攻略网站 - 首页基础代码
+# Wood Away Guide Site - Base Homepage Code
 
 [![Wood Away Guide](https://img.shields.io/badge/Guide%20Site-woodaway.org-blue)](https://woodaway.org/)
 
-欢迎来到 Wood Away 攻略网站的代码仓库！本项目是为热门益智游戏 "Wood Away" 创建的粉丝攻略网站 [woodaway.org](https://woodaway.org/) 的**基础首页示例代码**。
+Welcome to the code repository for the Wood Away Guide Site! This project contains the **base homepage example code** for the fan-made guide site [woodaway.org](https://woodaway.org/), created for the popular puzzle game "Wood Away".
 
-## 关于 Wood Away 游戏
+## About the Wood Away Game
 
-**Wood Away** 是一款引人入胜且令人上瘾的方块益智游戏。玩家的目标是在限定时间内，通过策略性地移动各种颜色的木块，将它们成功移入对应颜色的传送门。
+**Wood Away** is an engaging and addictive block puzzle game. The player's goal is to strategically move various colored wooden blocks into their corresponding color gates within a limited time.
 
-**游戏特色:**
+**Game Features:**
 
-- **烧脑挑战:** 考验你的逻辑思维和策略规划能力。
-- **数百关卡:** 大量精心设计的独特关卡，难度逐步提升。
-- **爽快消除:** 享受方块成功消除时的 ASMR 音效和视觉特效。
-- **多样障碍:** 不断出现的新障碍物和机制，保持游戏的新鲜感。
-- **策略道具:** 利用各种道具帮助你克服难关。
-- **限时挑战:** 在规定时间内完成任务，增加游戏的紧迫感。
+- **Brain Challenge:** Tests your logical thinking and strategic planning skills.
+- **Hundreds of Levels:** Numerous unique, meticulously designed levels with progressively increasing difficulty.
+- **Satisfying Clearing:** Enjoy the ASMR sound effects and visual spectacle when blocks are successfully cleared.
+- **Diverse Obstacles:** Constantly emerging new obstacles and mechanisms keep the game fresh.
+- **Strategic Power-Ups:** Utilize various power-ups to help overcome difficult levels.
+- **Timed Challenge:** Complete tasks within the specified time to increase the game's urgency.
 
-## 本项目：Wood Away 攻略站基础代码
+## This Project: Wood Away Guide Site Base Code
 
-这个代码仓库**仅包含**构建 [woodaway.org](https://woodaway.org/) 网站**基础首页**的部分示例源代码，主要用于展示网站的基本结构和技术栈。
+This code repository **only contains** partial example source code for the **base homepage** of the [woodaway.org](https://woodaway.org/) website, primarily serving to demonstrate the basic structure and technology stack of the site.
 
-**请注意：** 完整的游戏攻略（超过 500 关）、视频教程、解谜技巧和所有最新内容都在我们的 **官方攻略网站** 上提供。本仓库不包含完整的网站功能和所有攻略数据。
+**Please Note:** The complete game guides (over 500 levels), video tutorials, puzzle-solving tips, and all the latest content are available on our **Official Guide Website**. This repository does not contain the full website functionality or all guide data.
 
-➡️ **访问 Wood Away 完整攻略站：[https://woodaway.org/](https://woodaway.org/)** ⬅️
+➡️ **Visit the Complete Wood Away Guide Site: [https://woodaway.org/](https://woodaway.org/)** ⬅️
 
-## 本地开发启动指南 (基础首页示例)
+## Local Development Setup Guide (Base Homepage Example)
 
-如果你想在本地运行这个基础首页示例代码，请遵循以下步骤：
+If you want to run this base homepage example code locally, please follow these steps:
 
-**前提条件:**
+**Prerequisites:**
 
-- 确保你的系统已安装 [Node.js](https://nodejs.org/) (建议使用 LTS 版本)
-- 推荐使用 [yarn](https://yarnpkg.com/) 或 npm 作为包管理器
+- Ensure your system has [Node.js](https://nodejs.org/) installed (LTS version recommended).
+- Using [yarn](https://yarnpkg.com/) or npm as the package manager is recommended.
 
-**步骤:**
+**Steps:**
 
-1.  **克隆仓库:**
+1.  **Clone the repository:**
 
     ```bash
     git clone https://github.com/someone1128/wood-Away-Levels-Page.git
     cd wood-Away-Levels-Page
     ```
 
-2.  **安装依赖:**
+2.  **Install dependencies:**
 
     ```bash
     yarn install
-    # 或者使用 npm
+    # Or using npm
     # npm install
     ```
 
-3.  **启动开发服务器:**
+3.  **Start the development server:**
 
     ```bash
     yarn dev
-    # 或者使用 npm
+    # Or using npm
     # npm run dev
     ```
 
-4.  **访问项目:**
-    在浏览器中打开 `http://localhost:3000` (或终端提示的其他端口号)，即可看到本地运行的基础首页示例。
+4.  **Access the project:**
+    Open `http://localhost:3000` (or the port number shown in the terminal) in your browser to see the locally running base homepage example.
 
-## 免责声明
+## Disclaimer
 
-本项目是一个由粉丝创建的游戏攻略网站的基础示例代码，与 Wood Away 官方游戏或其开发者没有关联。所有游戏内容、图像和商标均为其各自所有者的财产。
+This project is base example code for a fan-made game guide website and is not affiliated with the official Wood Away game or its developers. All game content, images, and trademarks are the property of their respective owners.
 
 ---
 
-再次感谢你对 Wood Away 攻略网站的关注！别忘了访问 [https://woodaway.org/](https://woodaway.org/) 获取最全最新的游戏攻略！
+Thanks again for your interest in the Wood Away Guide Site! Don't forget to visit [https://woodaway.org/](https://woodaway.org/) for the most comprehensive and up-to-date game guides!
